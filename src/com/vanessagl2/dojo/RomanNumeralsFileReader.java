@@ -19,7 +19,7 @@ public class RomanNumeralsFileReader {
             all.add(line);
         }
 
-        Map<String, String> result = new RomanNumeralsTranslator().translate(all);
+        Map<String, String> result = new RomanConverter().translate(all);
 
         for (String rs : result.keySet()) {
             System.out.println(rs + " = " + result.get(rs));
