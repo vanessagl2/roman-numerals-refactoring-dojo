@@ -13,6 +13,11 @@ public class RomanNumeralsTranslator {
         romanNumeralConverter = new RomanNumeralConverter();
     }
 
+    RomanNumeralsTranslator(List<String> arabicNumbers, RomanNumeralConverter converter) {
+        this.arabicNumbers = arabicNumbers;
+        romanNumeralConverter = converter;
+    }
+
     Map<String, String> translateToRoman() {
         Map<String, String> romanNumbers = new HashMap<>();
 
